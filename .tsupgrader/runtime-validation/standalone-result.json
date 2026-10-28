@@ -1,0 +1,150 @@
+{
+  "planHash": "875790be666d9a4e81d65b50f247c7b08f74179b6f47a885fc251369b58d5083",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-10-27T13:47:00.4386293Z",
+  "retryCount": 1,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E mavrix@0.1.0 build\r\n\u003E next build\r\n\r\n\u25B2 Next.js 16.4.3 (Turbopack)\r\n\u2713 Running next.config.ts took 44ms\r\n- Cache Components enabled\r\n- Partial Prefetching enabled\r\n- Experiments (use with caution):\r\n  \u2713 agentFeedback\r\n\r\n  Creating an optimized production build ...\r\n\u2713 Compiled successfully in 1609ms\r\n  Running TypeScript ...\r\n  Finished TypeScript in 4.0s ...\r\n  Collecting page data using 9 workers ...\r\n  Generating static pages using 9 workers (0/8) ...\r\n  Generating static pages using 9 workers (2/8) \r\n  Generating static pages using 9 workers (4/8) \r\n  Generating static pages using 9 workers (6/8) \r\n\u2713 Generating static pages using 9 workers (8/8) in 1700ms\r\n  Finalizing page optimization ...\r\n\r\nRoute (app)\r\n\u250C \u25CB /\r\n\u251C \u25CB /_not-found\r\n\u251C \u0192 /api/inquiry\r\n\u251C \u25CB /icon.svg\r\n\u251C \u25CB /robots.txt\r\n\u2514 \u25CB /sitemap.xml\r\n\r\n\r\n\u25CB  (Static)   prerendered as static content\r\n\u0192  (Dynamic)  server-rendered on demand\r\n\r\n",
+        "durationMs": 11528
+      },
+      {
+        "name": "eslint",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E mavrix@0.1.0 lint\r\n\u003E eslint\r\n\r\n",
+        "durationMs": 9004
+      },
+      {
+        "name": "tsc-no-emit",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "",
+        "durationMs": 5961
+      },
+      {
+        "name": "homepage-responds",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\u003Chtml lang=\u0022en\u0022 class=\u0022VNkuCW_variable _8KRAjW_variable HY6KSa_variable h-full antialiased\u0022\u003E\u003Chead\u003E\u003Cmeta charSet=\u0022utf-8\u0022/\u003E\u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022/\u003E\u003Clink rel=\u0022stylesheet\u0022 href=\u0022/_next/static/chunks/2vtb2jwak-drl.css\u0022 data-precedence=\u0022next\u0022/\u003E\u003Clink rel=\u0022preload\u0022 as=\u0022script\u0022 fetchPriority=\u0022low\u0022 href=\u0022/_next/static/chunks/3cfn99dbrcvvp.js\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/1j_b1xq_woyiy.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/441_hqku_9f3s.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/turbopack-3-ry682tkyiqk.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/3nvikkoxliapx.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/1c2q2o9523kqu.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cscript src=\u0022/_next/static/chunks/0b6sjf6p-qu92.js\u0022 async=\u0022\u0022\u003E\u003C/script\u003E\u003Cmeta name=\u0022next-size-adjust\u0022 content=\u0022\u0022/\u003E\u003Ctitle\u003EMavrix Technologies\u003C/title\u003E\u003Cmeta name=\u0022description\u0022 content=\u0022Engineering precision, intelligent workflow automation, and custom digital systems tailored for modern businesses.\u0022/\u003E\u003Clink rel=\u0022icon\u0022 href=\u0022/favicon.ico?favicon.117ezoe8m31dk.ico\u0022 sizes=\u002248x48\u0022 type=\u0022image/x-icon\u0022/\u003E\u003Cscript src=\u0022/_next/static/chunks/0cz1d0mv5g_q7.js\u0022 noModule=\u0022\u0022\u003E\u003C/script\u003E\u003C/head\u003E\u003Cbody class=\u0022min-h-full flex flex-col\u0022\u003E\u003Cdiv hidden=\u0022\u0022\u003E\u003C!--$--\u003E\u003C!--/$--\u003E\u003C/div\u003E\u003Cheader class=\u0022fixed inset-x-0 top-4 z-40 mx-auto w-[calc(100%-2rem)] max-w-6xl\u0022\u003E\u003Cnav aria-label=\u0022Main navigation\u0022 class=\u0022relative z-50 flex items-center justify-between rounded-full border px-4 py-3 shadow-lg shadow-navy/5 backdrop-blur-xl sm:px-6 border-white/30 bg-white/70\u0022\u003E\u003Ca href=\u0022#services\u0022 class=\u0022flex items-center gap-2 font-semibold tracking-tight text-navy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent\u0022 aria-label=\u0022Mavrix Technologies\u0022\u003E\u003Csvg aria-hidden=\u0022true\u0022 class=\u0022size-8\u0022 viewBox=\u00220 0 40 40\u0022 fill=\u0022none\u0022\u003E\u003Crect width=\u002240\u0022 height=\u002240\u0022 rx=\u002212\u0022 fill=\u0022#0A0F1F\u0022\u003E\u003C/rect\u003E\u003Cpath d=\u0022M9 29V11h4.5L20 21l6.5-10H31v18h-4.5V19l-6.5 9-6.5-9v10H9Z\u0022 fill=\u0022#3DB5FF\u0022\u003E\u003C/path\u003E\u003C/svg\u003E\u003Cspan\u003EMavrix Technologies\u003C/span\u003E\u003C/a\u003E\u003Cul class=\u0022hidden items-center gap-1 lg:flex\u0022\u003E\u003Cli\u003E\u003Ca href=\u0022#services\u0022 class=\u0022relative block overflow-hidden rounded-full px-3 py-2 text-sm text-ink/75 hover:text-navy focus-visible:outline-2 focus-visible:outline-accent\u0022\u003E\u003Cspan class=\u0022absolute inset-0 rounded-full bg-surface\u0022\u003E\u003C/span\u003E\u003Cspan class=\u0022relative block h-5 overflow-hidden\u0022\u003E\u003Cspan class=\u0022flex flex-col transition-transform duration-300 ease-out hover:-translate-y-1/2\u0022\u003E\u003Cspan class=\u0022h-5\u0022\u003EServices\u003C/span\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022h-5 text-navy\u0022\u003EServices\u003C/span\u003E\u003C/span\u003E\u003C/span\u003E\u003C/a\u003E\u003C/li\u003E\u003Cli\u003E\u003Ca href=\u0022#how-we-work\u0022 class=\u0022relative block overflow-hidden rounded-full px-3 py-2 text-sm text-ink/75 hover:text-navy focus-visible:outline-2 focus-visible:outline-accent\u0022\u003E\u003Cspan class=\u0022relative block h-5 overflow-hidden\u0022\u003E\u003Cspan class=\u0022flex flex-col transition-transform duration-300 ease-out hover:-translate-y-1/2\u0022\u003E\u003Cspan class=\u0022h-5\u0022\u003EHow We Work\u003C/span\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022h-5 text-navy\u0022\u003EHow We Work\u003C/span\u003E\u003C/span\u003E\u003C/span\u003E\u003C/a\u003E\u003C/li\u003E\u003Cli\u003E\u003Ca href=\u0022#stack\u0022 class=\u0022relative block overflow-hidden rounded-full px-3 py-2 text-sm text-ink/75 hover:text-navy focus-visible:outline-2 focus-visible:outline-accent\u0022\u003E\u003Cspan class=\u0022relative block h-5 overflow-hidden\u0022\u003E\u003Cspan class=\u0022flex flex-col transition-transform duration-300 ease-out hover:-translate-y-1/2\u0022\u003E\u003Cspan class=\u0022h-5\u0022\u003EStack\u003C/span\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022h-5 text-navy\u0022\u003EStack\u003C/span\u003E\u003C/span\u003E\u003C/span\u003E\u003C/a\u003E\u003C/li\u003E\u003Cli\u003E\u003Ca href=\u0022#faq\u0022 class=\u0022relative block overflow-hidden rounded-full px-3 py-2 text-sm text-ink/75 hover:text-navy focus-visible:outline-2 focus-visible:outline-accent\u0022\u003E\u003Cspan class=\u0022relative block h-5 overflow-hidden\u0022\u003E\u003Cspan class=\u0022flex flex-col transition-transform duration-300 ease-out hover:-translate-y-1/2\u0022\u003E\u003Cspan class=\u0022h-5\u0022\u003EFAQ\u003C/span\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022h-5 text-navy\u0022\u003EFAQ\u003C/span\u003E\u003C/span\u003E\u003C/span\u003E\u003C/a\u003E\u003C/li\u003E\u003Cli\u003E\u003Ca href=\u0022#contact\u0022 class=\u0022relative block overflow-hidden rounded-full px-3 py-2 text-sm text-ink/75 hover:text-navy focus-visible:outline-2 focus-visible:outline-accent\u0022\u003E\u003Cspan class=\u0022relati\n\u2026[truncated]",
+        "durationMs": 17
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E mavrix@0.1.0 test\r\n\u003E vitest run\r\n\r\n\r\n\u001B[1m\u001B[46m RUN \u001B[49m\u001B[22m \u001B[36mv3.2.7 \u001B[39m\u001B[90mE:/projects/internshipAssignment/mavrix\u001B[39m\r\n\r\n \u001B[32m\u2713\u001B[39m src/app/api/inquiry/route.test.ts \u001B[2m(\u001B[22m\u001B[2m3 tests\u001B[22m\u001B[2m)\u001B[22m\u001B[32m 41\u001B[2mms\u001B[22m\u001B[39m\r\n \u001B[32m\u2713\u001B[39m src/components/sections/sections.test.ts \u001B[2m(\u001B[22m\u001B[2m4 tests\u001B[22m\u001B[2m)\u001B[22m\u001B[32m 50\u001B[2mms\u001B[22m\u001B[39m\r\n\r\n\u001B[2m Test Files \u001B[22m \u001B[1m\u001B[32m2 passed\u001B[39m\u001B[22m\u001B[90m (2)\u001B[39m\r\n\u001B[2m      Tests \u001B[22m \u001B[1m\u001B[32m7 passed\u001B[39m\u001B[22m\u001B[90m (7)\u001B[39m\r\n\u001B[2m   Start at \u001B[22m 19:16:58\r\n\u001B[2m   Duration \u001B[22m 1.83s\u001B[2m (transform 334ms, setup 0ms, collect 1.42s, tests 91ms, environment 0ms, prepare 505ms)\u001B[22m\r\n\r\n",
+        "durationMs": 3096,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 7,
+          "testsPassed": 7,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      }
+    ],
+    "executions": [
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "E:\\projects\\internshipAssignment\\mavrix",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "eslint",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "lint"
+        ],
+        "cwd": "E:\\projects\\internshipAssignment\\mavrix",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tsc-no-emit",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npx.CMD",
+        "args": [
+          "tsc",
+          "--noEmit",
+          "--incremental",
+          "false"
+        ],
+        "cwd": "E:\\projects\\internshipAssignment\\mavrix",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "homepage-responds",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "start",
+          "--",
+          "-p",
+          "3100"
+        ],
+        "cwd": "E:\\projects\\internshipAssignment\\mavrix",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "test"
+        ],
+        "cwd": "E:\\projects\\internshipAssignment\\mavrix",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}
